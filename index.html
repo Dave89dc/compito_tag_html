@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compito tag html</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #articoloEaside {
+            display: flex;
+        }
+
+        aside {
+            width: 20%;
+            margin-left: 30px;
+        }
+
+        button {
+            width: 80px;
+            height: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 4px 1px black;
+            cursor: pointer;
+        }
+
+        button:active {
+            box-shadow: none;
+        }
+
+        table {
+            margin: 30px 0 0 10px;
+            padding: 5px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        table,
+        tr,
+        td,
+        th {
+            border: 2px solid black;
+        }
+
+        dl {
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        #incorporato {
+            margin-top: 100px;
+            margin-bottom: 30px;
+        }
+
+        #pizza {
+            width: 500px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Primo compito in classe, tag HTML e la loro funzionalità -->
+
+    <main>
+        <header>
+            <h1>Lista dei tag html</h1>
+
+            <abbr title="HyperText Markup Language">HTML</abbr><br>
+        </header><br>  
+
+        <address>
+            Compito eseguito da Davide Consigliere,<br>
+            New York, Via Manhattan<br>
+            Presso me stesso
+        </address>
+    </main>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#table">Vai a tabella</a>
+            </li>
+            <li>
+                <a href="#dl">Vai alla description list</a>
+            </li>
+            <li>
+                <a href="#pizza">Vai all'immagine della pizza</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="articoloEaside">
+        <article>
+            <p>
+                Questo è un paragrafo d'esempio usato all'interno del tag "article".
+            </p>
+        </article>
+
+        <aside>
+            <p>
+                Questo paragrafo di esempio è all'interno del tag "aside", che serve per creare una sezione laterale
+                della pagina.
+            </p>
+        </aside>
+    </div>
+
+    <p>In questo paragrafo uso il <b>tag "b" per il grassetto</b>.</p>
+
+    <h3>Unordered list con tag "bdi" al suo interno:</h3>
+    <ul>
+        <li>Utente <bdi>Nome 1</bdi>: Online</li>
+        <li>Utente <bdi>Nome 2</bdi>: Offline</li>
+        <li>Utente <bdi>Nome 3</bdi>: Offline</li>
+    </ul>
+
+    <bdo dir="rtl">
+        Questo testo ha una direzione inversa con l'utilizzo del tag "bdo".
+    </bdo>
+
+    <h3>Esempio di citazione con il tag "blockquote":</h3>
+    <blockquote cite="https://sitodellacitazione.com">
+        <p>La vita non è quella che si è vissuta, ma quella che si ricorda e come la si ricorda per raccontarla.</p>
+    </blockquote>
+
+    <h3>Esempio di citazione con il tag "q" e il tag "cite":</h3>
+    <p>Ecco una citazione: <q cite="https://sitodellacitazione.com">Coloro che sognano di giorno sanno molte cose che
+            sfuggono a chi sogna soltanto di notte</q><cite> Edgar Allan Poe</cite></p>
+
+    <button>Cliccami</button>
+
+    <table id="table">
+        <caption><b>Titolo tabella con tag "caption":</b></caption>
+        <thead>
+            <th>Dato 1</th>
+            <th>Dato 2</th>
+            <th>Dato 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Elemento 1</td>
+                <td>Elemento 2</td>
+                <td>Elemento 3</td>
+            </tr>
+            <tr>
+                <td>Elemento 4</td>
+                <td>Elemento 5</td>
+                <td>Elemento 6</td>
+            </tr>
+            <tr>
+                <td>Elemento 7</td>
+                <td>Elemento 8</td>
+                <td>Elemento 9</td>
+            </tr>
+        </tbody>
+    </table><br>
+
+    <code>Esempio di tag "code".</code><br>
+
+    <table>
+        <caption><b>Titolo tabella con i tag "colgroup" e "col":</b></caption>
+        <colgroup>
+            <col style="background-color: aqua;">
+            <col style="background-color: red;">
+            <col style="background-color: yellow;">
+        </colgroup>
+        <tr>
+            <th>Dato 1</th>
+            <th>Dato 2</th>
+            <th>Dato 3</th>
+        </tr>
+        <tr>
+            <td>Elemento A</td>
+            <td>Elemento B</td>
+            <td>Elemento C</td>
+        </tr>
+        <tr>
+            <td>Elemento D</td>
+            <td>Elemento E</td>
+            <td>Elemento F</td>
+        </tr>
+        <tr>
+            <td>Elemento G</td>
+            <td>Elemento H</td>
+            <td>Elemento I</td>
+        </tr>
+    </table><br>
+
+    <input type="text" placeholder="Inserisci nome" list="nomi">
+    <datalist id="nomi">
+        <option value="Andrea">
+        <option value="Luca">
+        <option value="Marco">
+        <option value="Roberto">
+    </datalist>
+
+    <div id="dl">
+        <dl>
+            <dt>Gatto</dt>
+            <dd>Animale domestico oppurtunista e pigro</dd>
+            <dt>Cane</dt>
+            <dd>Animale domestico più stupido del gatto ma più simpatico e riconoscente</dd>
+        </dl>
+    </div>
+
+    <p>Esempio di un testo <del>cancellato col tag "del"</del> <ins>e con tag "ins"</ins>.</p>
+
+    <details>
+        <summary>Copyright Dave89dc</summary>
+        <p>Questa pagina è stata creata da me stesso per esercitarmi coi tag html</p>
+    </details>
+
+    <p>Esempio di tag "dfn" <dfn>con questo paragrafo</dfn></p>
+
+    <dialog open="open">
+        Questa è una finestra di dialogo creata con il tag "dialog".
+    </dialog>
+
+    <div id="incorporato">
+        <h3>Video incorporato con iframe da youtube</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jRDREPCdpCE" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <fieldset>
+        <legend>Esempio di tag "fieldset" con "legend"</legend>
+        <ol>
+            <li>Depeche Mode</li>
+            <li>Tool</li>
+            <li>Linkin Park</li>
+            <li>U2</li>
+        </ol>
+    </fieldset>
+
+    <figure>
+        <img id="pizza" src="./asset/Pizza.jpg" alt="Un'immagine di una pizza">
+        <figcaption>Una pizza che fa venire fame</figcaption>
+    </figure><br>
+    
+    <h3>Seleziona il tuo sport preferito tra questi 3:</h3>
+    <form action="http://achiinviareidati.com">
+        <input type="checkbox" id="basket" name="basket" value="basket">
+        <label for="basket">Basket</label>
+        <input type="checkbox" id="calcio" name="calcio" value="calcio">
+        <label for="calcio">Calcio</label>
+        <input type="checkbox" id="tennis" name="tennis" value="tennis">
+        <label for="tennis">Tennis</label>
+    </form>
+
+    <hr>
+
+    <kbd>Esempio di tag "kdb".</kbd><br>
+
+    <mark>Esempio di testo evidenziato con il tag "mark":</mark>
+
+    <select name="opzioni" id="opzioni">
+        <option value="">Scegli...</option>
+        <optgroup label="colori">
+            <option value="nero">Nero</option>
+            <option value="blu">Blu</option>
+            <option value="grigio">Grigio</option>
+        </optgroup>
+        <optgroup label="cibo">
+            <option value="pizza">Pizza</option>
+            <option value="bistecca">Bistecca</option>
+            <option value="patatine">Patatine</option>
+        </optgroup>
+    </select>
+
+    <h3>Barra di progresso</h3>
+    <progress value="40" max="100"/>
+
+    <p>Prezzo pieno: <s>100 euro</s><br>
+    Prezzo scontato: 89,90 euro</p>
+
+    <samp>Esempio di testo con il tag "samp".</samp>
+
+    <pre>
+        <code>
+            #articoloEaside {
+                display: flex;
+            }
+    
+            aside {
+                width: 20%;
+                margin-left: 30px;
+            }
+    
+            button {
+                width: 80px;
+                height: 30px;
+                border-radius: 10px;
+                box-shadow: 0 0 4px 1px black;
+                cursor: pointer;
+            }
+        </code>
+    </pre>
+
+    
+
+</body>
+
+</html>
